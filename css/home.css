@@ -1,0 +1,256 @@
+body{
+    background-image: url('../img/words.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.word-of-the-day
+{
+   
+    margin: auto;
+    margin-top: 150px;
+    margin-right: 30px;
+    width: 30%;
+    border-left: 10px outset #8B4513;
+    border-top: 20 px outset lightcoral;
+    border-right: 20 px outset lightcoral;
+    border-bottom: 20 px outset lightcoral;
+    border-radius: 8px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 1px #8B4513;
+    transition: width 0.5s ease-out;
+    position:relative;
+    float:right;
+
+}
+
+.word-of-the-day:hover{
+        background: #F5F5F5;
+        width:35%;
+        opacity: 1;
+        height: auto;
+}
+
+.play-now-div{
+    
+    margin: auto;
+    margin-top: 150px;
+    margin-right: 30px;
+    width: 50%;
+    border-left: 10px outset #8B4513;
+    border-top: 20 px outset lightcoral;
+    border-right: 20 px outset lightcoral;
+    border-bottom: 20 px outset lightcoral;
+    border-radius: 8px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 1px #8B4513;
+    transition: width 0.5s ease-out;
+    float: left;
+    margin-left: 5vw;
+} 
+
+.play-now-div .p1{
+    font-size: 27px;
+}
+
+.play-now-div .p2{
+    font-size: 22px;
+}
+
+.play-now-div:hover{
+  background: #F5F5F5;
+  color: black;
+  width:58%;
+  opacity: 1;
+} 
+
+.button {
+    /* display: inline-block; */
+    border-radius: 6px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 1em;
+    width: 25%;
+    height: 5vh;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button:hover{
+    background: #8B4513;
+  }
+
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url('../img/paper.jpeg');
+        background-repeat: repeat;
+    }
+
+
+    .word-of-the-day{
+        margin-top : 25px;
+        background: white;
+        width:80%;
+        opacity: 0.9;
+        height: auto;
+        margin-right: auto;
+        position: relative;
+        float: none;
+
+    }
+
+    .word-of-the-day:hover{
+        background: white;
+        width:85%;
+        opacity: 1;
+        height: auto;
+    }
+
+    .play-now-div{
+        margin-top: 30px;
+        margin-left : 10vw; 
+        background: white;
+        width:80%;
+        opacity: 0.9;
+        height: auto;
+        margin-right: auto;
+        position: relative;
+        float: none;
+    }
+
+    .play-now-div:hover{
+        background: white;
+        width:85%;
+        opacity: 1;
+        height: auto;
+    }
+
+    .play-now-div .p1{
+        font-size: 22px;
+    }
+    
+    .play-now-div .p2{
+        font-size: 18px;
+    }
+
+
+    .button{
+        margin-top: -40px;
+        height: 6vh;
+        font-size: 16px;
+    }
+
+    .button:hover{
+        background:  #8B4513;
+    }
+
+
+}
+
+/* iPad Pro Size */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    body{
+        background-image: url('../img/paper.jpeg');
+        background-repeat: repeat;
+    }
+
+    .word-of-the-day{
+        margin-top : 100px;
+        background: white;
+        width:80%;
+        opacity: 0.9;
+        height: auto;
+        margin-right: auto;
+        position: relative;
+        float: none;
+        font-size: 30px;
+        font-size: 22px;
+
+    }
+
+    .word-of-the-day:hover{
+        background: white;
+        width:85%;
+        opacity: 0.9;
+        height: auto;
+    }
+
+    .play-now-div{
+        margin-top: 50px;
+        margin-left : 10vw; 
+        background: white;
+        width:80%;
+        opacity: 0.9;
+        height: auto;
+        margin-right: auto;
+        position: relative;
+        float: none;
+    }
+
+    .play-now-div:hover{
+        background: white;
+        width:85%;
+        opacity: 1;
+        height: auto;
+    }
+
+    .play-now-div .p1{
+        font-size: 26px;
+    }
+    
+    .play-now-div .p2{
+        font-size: 21px;
+    }
+
+
+    .button{
+        margin-top: -35px;
+        margin-bottom: 15px;
+        height: 4vh;
+        font-size: 15px;
+    }
+
+    .button:hover{
+        background:  #8B4513;
+    }
+}

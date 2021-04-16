@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background: url('../img/brick.jpg'); 
+}
+
+input {
+  font-size: 20px;
+background-color: silver;
+  font-weight: 400;
+  margin-left: 2vw;
+}
+
+input.number-input {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 17px -1px rgba(132, 132, 132, 0.15);
+  -moz-box-shadow: 0px 0px 17px -1px rgba(132, 132, 132, 0.15);
+  box-shadow: 0px 0px 17px -1px rgba(132, 132, 132, 0.15);
+}
+
+.wrapper {
+  width: 100%;
+}
+.wrapper .phone {
+  width: 350px;
+  margin: 40px auto 0 auto;
+  position: relative;
+}
+.wrapper .phone span.title {
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+  text-align: center;
+}
+.wrapper .phone .phone-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: -30px;   /* Aligning the word boxes according to qn div */
+}
+.wrapper .phone .phone-container .keyboard {
+  width: 100%;
+  margin-left: auto;
+  margin-top: 40px;
+}
+.wrapper .phone .phone-container .keyboard .number {
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+}
+.wrapper .phone .phone-container .keyboard .number.aling-right {
+  text-align: right;
+  width: 100%;
+}
+.wrapper .phone .phone-container .keyboard .number span {
+  font-size: 24px;
+color: darkgray;
+  display: inline-block;
+width: 20%; 
+  text-align: center;
+  margin-bottom: 25px;
+}
+.wrapper .phone .phone-container .keyboard .number span.call-button {
+  opacity: 0;
+  transition: 250ms;
+}
+.wrapper .phone .phone-container .keyboard .number span.call-button.show {
+  opacity: 1;
+}
+.wrapper .phone .phone-container .keyboard .number span.call-button img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrapper .phone .phone-container .keyboard .number span i {
+  display: inline-block;
+width: 60px;
+height: 60px;
+line-height: 60px;
+margin-bottom: -20px;
+margin-top: -20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 250ms;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(132, 132, 132, 0.09);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(132, 132, 132, 0.09);
+  box-shadow: 8px 8px 24px 0px rgba(132, 132, 132, 0.09);
+}
+.wrapper .phone .phone-container .keyboard .number span i.delete {
+  background-color: #f2f3f4;
+  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  -ms-box-shadow: 0 0 0 0;
+  color: #E4BF88;
+margin-bottom: 10px;
+margin-right: -40px;
+}
+.wrapper .phone .phone-container .keyboard .number span i.delete img {
+  display: inline-block;
+  vertical-align: middle; 
+  /* margin-left: 10vw; */
+}
+.wrapper .phone .phone-container .keyboard .number span:hover i {
+  color: black;
+}
+.wrapper .phone .phone-container .keyboard .number span:active i {
+  transform: translateY(1px);
+  -webkit-box-shadow: 5px 5px 24px 0px rgba(132, 132, 132, 0.18);
+  -moz-box-shadow: 5px 5px 16px 0px rgba(132, 132, 132, 0.18);
+  box-shadow: 5px 5px 16px 0px rgba(132, 132, 132, 0.18);
+}
+.wrapper .phone .phone-container .keyboard .number span:active i.delete {
+  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  -ms-box-shadow: 0 0 0 0;
+  transform: translateY(0px);
+}
+.wrapper .phone .phone-container .keyboard .number span:active i.delete img {
+  transition: 250ms;
+}
+.wrapper .phone .phone-container .keyboard .number span:active i.delete:active img {
+  transform: translateY(2px);
+}
+
+/* page navigation buttons */
+.page{
+  background-color: rgb(48, 48, 48);
+  /* margin:5px; */
+  text-align: center;
+  width: 3vw;
+  height: 5vh; 
+  display: inline-block;
+  border-radius: 8px;
+  margin: 10px 10px 0 0;
+  padding: 3px; 
+  /* margin-top:12px;
+  margin-bottom: auto; */
+}
+
+.page a{
+  padding : 10px;
+}
+
+.page:hover{
+  background-color: #ff0000
+}
+
+/* div of pagination */
+.pagination{
+    margin: auto;
+    margin-top: 10px;
+    width: 40%;
+    height: auto;
+    border: 2px outset dimgray;
+    text-align: center;
+    padding: 20px;
+    background: rgb(192, 192, 192, 0.35);
+    box-sizing: border-box;
+    box-shadow: rgba(165, 88, 0, 0.925);
+    border-radius: 10px;
+}
+
+
+
+/* Hint button */
+
+.hint-btn{
+  border-radius: 8px;
+  background-color: #ff0000;
+  border: none;
+  width: 4vw;
+  height: 5vh;
+  color: #FFFFFF;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 1em;
+  float: right;
+  cursor: pointer;
+  
+}
+
+.hint-btn:hover{
+  background-color: green;
+  
+}
+
+/* meaning aka qn */
+.qn{
+  font-family:system-ui;
+  font-size:1.2em;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px){
+
+  .wrapper .phone .phone-container .keyboard .number span {
+    width: 33%;
+  }
+}

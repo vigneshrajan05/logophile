@@ -1,0 +1,217 @@
+/* body{
+    background: url('../img/start-now-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    width:50%;
+}
+
+
+
+.category-div{
+    background-color: #f2f2f2;
+    margin: auto;
+    margin-top: 10vh;
+    width: 40%;
+    height:auto;
+    padding: 10px;
+    box-sizing: border-box;
+    /*text-align: center; 
+    border-radius: 15px;
+}
+
+
+input[type = text]{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(64, 140, 184, 0.23);
+    border-radius:10px;
+    margin:10px;
+    width: 12vw;
+    /* margin-left:200px; 
+}
+
+input[type = radio]{
+    margin-left:200px;
+}
+
+
+
+
+.btn{
+    border-radius: 11px;
+    width: 25%;
+    height: 5vh;
+    background: rgb(29, 119, 255);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-left: 200px;
+    float: right;
+}
+
+.btn:hover{
+    background: rgb(51, 136, 1);
+    color: white;
+}
+
+.btn:focus{
+    border: none;
+    box-shadow:0 0 15px 4px rgba(204, 243, 31, 0.23);
+}
+
+input[type = text]:focus{
+    box-shadow:0 0 15px 4px rgba(0, 190, 248, 0.444);
+}
+
+input[type = radio]:focus{
+    box-shadow:0 0 15px 4px rgba(0, 190, 248, 0.444);
+} */
+
+
+:root {
+    --main-color: #6B6FA9;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Poppins:400,500');
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body{
+   background-color:  #F4F4FB;
+   background: url('../img/word.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.1em;
+  }
+  
+  p{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  input[type=text],select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+  
+  }
+  
+  input[type=submit] {
+    background-color: #6B6FA9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    box-shadow: 0 0 10px 1px var(--main-color);
+    background-color: green;
+  }
+  
+  
+  .input_container {
+    border-radius: 5px;
+    background-color: #E2DDEA;
+    padding: 20px;
+    width: 35%;
+    height:auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+  }
+
+  .input_container:hover{
+      box-shadow:  0 0 10px 5px #ddadaf;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+input[type = text]:focus{
+    box-shadow:0 0 15px 4px rgba(0, 190, 248, 0.444);
+    border: none;
+    outline: none;
+}
+
+select:focus{
+    box-shadow:0 0 15px 4px rgba(0, 190, 248, 0.444);
+} 
+
+  
+  @media (max-width: 700px) {
+    body{
+        background:url('../img/black3.jpg');
+    }
+
+
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .input_container{
+      width: 85%;
+    }
+  
+  }
+  
+  
+  @media (min-width: 700px) and (max-width: 900px){
+    body{
+        background:url('../img/black3.jpg');
+    }
+
+
+    .input_container{
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1024px){
+    body{
+        background:url('../img/black3.jpg');
+    }
+
+    .input_container{
+      width: 70%;
+    }
+  }
+  
